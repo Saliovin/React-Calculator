@@ -1,0 +1,119 @@
+body {
+  padding: 0;
+  margin: 0;
+  --bg-color: #fff;
+  --toggle-color: #333;
+  --key-text-color: #222;
+  --key-color: #e9e9ed;
+  --key-hover-color: #ccc;
+  --key-active-color: #bbb;
+  --operator-color: #ffc333;
+  --operator-hover-color: #eeb123;
+  --operator-active-color: #d8a01b;
+  --function-color: #aaa;
+  --function-hover-color: #999;
+  --function-active-color: #777;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--bg-color);
+  transition: background-color 0.2s ease;
+}
+
+body.dark-theme {
+  --bg-color: #141c1f;
+  --toggle-color: #ddd;
+  --key-text-color: #ddd;
+  --key-color: #1a1a2d;
+  --key-hover-color: #212134;
+  --key-active-color: #2a2a3f;
+  --operator-color: #231a1a;
+  --operator-hover-color: #2d2323;
+  --operator-active-color: #382e2e;
+  --function-color: #1b171f;
+  --function-hover-color: #26212c;
+  --function-active-color: #393240;
+}
+
+button {
+  border: 0;
+  padding: 0;
+}
+
+.key {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  color: var(--key-text-color);
+  background-color: var(--key-color);
+}
+.key:hover {
+  background-color: var(--key-hover-color);
+}
+.key:active {
+  background-color: var(--key-active-color);
+}
+
+.key.operatorKey {
+  background-color: var(--operator-color);
+}
+.key.operatorKey:hover {
+  background-color: var(--operator-hover-color);
+}
+.key.operatorKey:active {
+  background-color: var(--operator-active-color);
+}
+
+.key.functionKey {
+  background-color: var(--function-color);
+}
+.key.functionKey:hover {
+  background-color: var(--function-hover-color);
+}
+.key.functionKey:active {
+  background-color: var(--function-active-color);
+}
+
+.key.key0 {
+  width: 100px;
+}
+
+.keypad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.display {
+  width: 200px;
+  height: 50px;
+  background-color: #333;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.display .displayText {
+  font-size: 2rem;
+  padding: 0.2rem;
+  color: #ddd;
+}
+
+.Calculator {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px 0px;
+}
+
+.darkModeToggle {
+  height: 15px;
+  width: 15px;
+  border-radius: 15px;
+  background-color: var(--toggle-color);
+  cursor: pointer;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-width: 200px;
+  justify-content: center;
+  align-items: center;
+}
