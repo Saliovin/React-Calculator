@@ -45,6 +45,7 @@ button {
   cursor: pointer;
   color: var(--key-text-color);
   background-color: var(--key-color);
+  transition: all 0.2s ease;
 }
 .key:hover {
   background-color: var(--key-hover-color);
