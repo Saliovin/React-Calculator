@@ -4,9 +4,7 @@ WORKDIR /app
 
 COPY package.json .
 
-RUN npm install --legacy-peer-deps
-
-RUN npm install --save-dev ajv@^7
+RUN npm install
 
 RUN npm i -g serve
 
